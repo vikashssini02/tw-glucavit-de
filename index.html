@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Character Set and Viewport -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glucavit Kapseln - Unterstützung für Gewichtsverlust & Diät</title>
+
+    <!-- SEO and Social Media Meta Tags (Preserved and Optimized) -->
+    <meta name="description" content="Entdecken Sie Glucavit, das führende Nahrungsergänzungsmittel zur Gewichtsabnahme. Unsere Kapseln unterstützen Ihren Stoffwechsel und helfen bei Ihrer Diät. Lesen Sie Bewertungen und erfahren Sie mehr über die Inhaltsstoffe.">
+    <meta property="og:title" content="Glucavit | Premium-Kapseln zur Gewichtsreduktion">
+    <meta property="og:description" content="Unterstützen Sie Ihre Diät mit Glucavit Abnehmtabletten. Eine natürliche Formel zur Förderung des Gewichtsmanagements.">
+
+        <link rel="canonical" href="https://glucavit-de.shop/" />
+
+    <meta name="google-site-verification" content="9y_9Led57eUn9l5DtBrUvpPXl4nJZS3sHN_fRhZu6yo">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Preconnect to Google Fonts for Faster Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Your Custom Stylesheet and Script -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- ===== VERIFICATION POPUP ===== -->
+    <div id="verification-popup-overlay">
+        <div id="verification-popup">
+            <div id="popup-content">
+                <svg class="popup-icon" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 256 256"><path fill="currentColor" d="M221.66 133.66a8 8 0 0 1-11.32 0L176 99.31V200a8 8 0 0 1-16 0V99.31l-34.34 34.35a8 8 0 0 1-11.32-11.32l48-48a8 8 0 0 1 11.32 0l48 48a8 8 0 0 1 0 11.32ZM80 56V156.69l-34.34-34.35a8 8 0 0 0-11.32 11.32l48 48a8 8 0 0 0 11.32 0l48-48a8 8 0 0 0-11.32-11.32L88 156.69V56a8 8 0 0 0-16 0Z"/></svg>
+                <h2 class="popup-title">Bestätigen Sie Ihre Anfrage</h2>
+                <p class="popup-text">Sind Sie ein Mensch oder ein Bot?</p>
+                <button id="verify-button" class="cta-button">Verifizieren</button>
+            </div>
+            <div id="popup-verifying" style="display: none;">
+                <h2 class="popup-title">Überprüfung...</h2>
+                <div class="progress-bar-container">
+                    <div id="progress-bar-inner"></div>
+                </div>
+                 <p class="popup-text">Bitte warten Sie, während wir Ihre Verbindung sichern.</p>
+            </div>
+        </div>
+    </div>
+    <!-- ===== END POPUP ===== -->
+
+    <!-- Top Bar -->
+    <section class="top-bar">
+        <div class="container top-bar-content">
+            <div class="offer-text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M23.8595 8.71875L22.6008 7.04053L21.9009 11.9395C21.8369 12.3883 21.6249 12.8121 21.3043 13.1327L12.6864 21.7506C11.9347 22.5023 10.9341 22.9164 9.86905 22.9164C9.55499 22.9164 9.24202 22.8796 8.93652 22.8067C9.39496 23.5234 10.1973 24 11.1095 24H21.422C22.8435 24 24.0001 22.8434 24.0001 21.4219V9.14062C24.0001 8.98851 23.9507 8.84048 23.8595 8.71875Z" fill="currentColor"></path><path d="M14.5093 11.6814C14.8976 11.6814 15.2124 11.3666 15.2124 10.9783C15.2124 10.5899 14.8976 10.2751 14.5093 10.2751C14.121 10.2751 13.8062 10.5899 13.8062 10.9783C13.8062 11.3666 14.121 11.6814 14.5093 11.6814Z" fill="currentColor"></path><path d="M6.5542 11.6814C6.94252 11.6814 7.25732 11.3666 7.25732 10.9783C7.25732 10.5899 6.94252 10.2751 6.5542 10.2751C6.16587 10.2751 5.85107 10.5899 5.85107 10.9783C5.85107 11.3666 6.16587 11.6814 6.5542 11.6814Z" fill="currentColor"></path><path d="M11.692 20.7562L20.3098 12.1384C20.4174 12.0308 20.4872 11.8912 20.5087 11.7406L21.5031 4.78002C21.5186 4.67196 21.5086 4.56179 21.4741 4.45823C21.4396 4.35467 21.3814 4.26058 21.3043 4.18339L19.8127 2.69183L17.824 4.6806L18.3212 5.1778C18.5958 5.45235 18.5958 5.89757 18.3212 6.17216C18.1839 6.30946 18.0039 6.37813 17.824 6.37813C17.6441 6.37813 17.4641 6.30946 17.3269 6.17216L15.3381 4.18339C15.0635 3.90885 15.0635 3.46363 15.3381 3.18903C15.6126 2.91449 16.0579 2.91449 16.3325 3.18903L16.8297 3.68624L18.8184 1.69747L17.3268 0.20591C17.2496 0.12877 17.1555 0.070644 17.052 0.0361259C16.9484 0.00160777 16.8383 -0.0083567 16.7302 0.00701982L9.76954 1.00143C9.61893 1.02295 9.47937 1.09274 9.3718 1.20032L0.753926 9.81819C-0.251309 10.8234 -0.251309 12.459 0.753926 13.4642L8.04594 20.7562C8.54854 21.2589 9.20877 21.5101 9.86896 21.5101C10.5291 21.5101 11.1894 21.2589 11.692 20.7562ZM14.5093 8.86893C15.6725 8.86893 16.6187 9.81519 16.6187 10.9783C16.6187 12.1414 15.6725 13.0877 14.5093 13.0877C13.3462 13.0877 12.4 12.1414 12.4 10.9783C12.4 9.81519 13.3462 8.86893 14.5093 8.86893ZM6.55438 13.0877C5.39127 13.0877 4.445 12.1414 4.445 10.9783C4.445 9.81519 5.39127 8.86893 6.55438 8.86893C7.71749 8.86893 8.66375 9.81519 8.66375 10.9783C8.66375 12.1414 7.71754 13.0877 6.55438 13.0877ZM8.87469 16.6535C8.801 16.6535 8.726 16.6418 8.65227 16.6172C8.28388 16.4944 8.0848 16.0963 8.20757 15.7278L11.5221 5.78408C11.6449 5.41569 12.0431 5.21661 12.4115 5.33938C12.7799 5.46219 12.979 5.86035 12.8562 6.22879L9.54168 16.1725C9.44343 16.4671 9.16907 16.6535 8.87469 16.6535Z" fill="currentColor"></path><path d="M21.3042 1.20027C21.5788 0.925723 21.5788 0.480504 21.3042 0.20591C21.0297 -0.0686367 20.5845 -0.0686367 20.3099 0.20591L18.8184 1.69747L19.8127 2.69183L21.3042 1.20027Z" fill="currentColor"></path></svg>
+                <span>ZEITLICH BEGRENZTES ANGEBOT | 47% RABATT</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html"><img src="images/logo.png" alt="Glucavit Firmenlogo" class="logo" width="120" height="44"></a>
+            <nav class="main-nav">
+                <a href="#" class="affiliate-link header-cta-mobile">Jetzt Kaufen</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Glucavit Schlankheitstabletten für Ihr Gewichtsmanagement</h1>
+                    <p>Entdecken Sie die Kraft der Glucavit Kapseln. Diese Abnehmtabletten enthalten traditionell verwendete Inhaltsstoffe zur Unterstützung des Stoffwechsels, was für jeden Gewichtsverlust entscheidend ist.</p>
+                    <a href="#" class="cta-button affiliate-link">Probiere GLUCAVIT JETZT</a>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/glucavit.webp" alt="Drei Flaschen des Glucavit Nahrungsergänzungsmittels, elegant arrangiert." class="hero-image" width="600" height="600" fetchpriority="high">
+                    <img src="images/natural.png" alt="Siegel '100% natürliche Inhaltsstoffe' für Glucavit Kapseln" class="hero-badge" width="120" height="120" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container features-grid">
+                <div class="feature-item"><img src="images/vegan.png" alt="Veganes Produkt-Symbol" width="44" height="44" loading="lazy"><span>Vegan</span></div>
+                <div class="feature-item"><img src="images/gluten.png" alt="Glutenfrei-Symbol" width="44" height="44" loading="lazy"><span>Glutenfrei</span></div>
+                <div class="feature-item"><img src="images/keine.png" alt="Keine Gentechnik-Symbol" width="44" height="44" loading="lazy"><span>Keine Gentechnik</span></div>
+                <div class="feature-item"><img src="images/metabolism.png" alt="Stoffwechsel-Unterstützung Symbol" width="44" height="44" loading="lazy"><span>Stoffwechsel</span></div>
+                <div class="feature-item"><img src="images/energy.png" alt="Energie-Symbol" width="44" height="44" loading="lazy"><span>Energie</span></div>
+                <div class="feature-item"><img src="images/burn.png" alt="Gewichtsverlust-Symbol" width="44" height="44" loading="lazy"><span>Gewichtsverlust</span></div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits-section">
+            <div class="container">
+                <h2>Unterstützen Sie Ihren Gewichtsverlust mit den natürlichen Glucavit Diätpillen</h2>
+                <p>Mit zunehmendem Alter verlangsamt sich der Stoffwechsel, was den Gewichtsverlust erschwert. Die Glucavit Diätpillen sind mit Inhaltsstoffen formuliert, die für ihre Rolle bei der Unterstützung des Energiestoffwechsels bekannt sind und eine wertvolle Ergänzung Ihrer Diät darstellen.</p>
+                <div class="benefits-content">
+                    <div class="benefits-grid">
+                        <div class="benefit-item"><img src="images/science.png" alt="Wissenschafts-Symbol" width="48" height="48" loading="lazy"><h3>Wissenschaftlich fundierte Inhaltsstoffe</h3><p>Jede der Glucavit Tabletten besteht aus 100 % natürlichen, gentechnikfreien Inhaltsstoffen – eine reine Formel, der Sie vertrauen können.</p></div>
+                        <div class="benefit-item"><img src="images/smeta.png" alt="Stoffwechsel-Symbol" width="48" height="48" loading="lazy"><h3>Belebter Stoffwechsel</h3><p>Die in Glucavit enthaltenen Nährstoffe tragen zu einem normalen Energiestoffwechsel bei, ein Schlüsselfaktor für erfolgreichen Gewichtsverlust.</p></div>
+                        <div class="benefit-item"><img src="images/apetite.png" alt="Appetitkontrolle-Symbol" width="48" height="48" loading="lazy"><h3>Kontrolle von Appetit und Heißhunger</h3><p>Unsere Abnehmkapseln enthalten Inhaltsstoffe, die traditionell zur Unterstützung des Sättigungsgefühls verwendet werden.</p></div>
+                        <div class="benefit-item"><img src="images/sustainable.png" alt="Energie-Symbol" width="48" height="48" loading="lazy"><h3>Nachhaltige Energie</h3><p>Diese Abnehmpille liefert Nährstoffe wie Vitamin B12, das zur Verringerung von Müdigkeit und Erschöpfung beiträgt.</p></div>
+                    </div>
+                    <img src="images/selfie.webp" alt="Eine lächelnde Frau hält eine Flasche Glucavit Abnehmpillen in die Kamera." class="benefits-image" width="600" height="600" loading="lazy">
+                </div>
+                <a href="#" class="cta-button affiliate-link">Testen Sie Glucavit noch heute</a>
+            </div>
+        </section>
+
+        <!-- Ingredients Section -->
+        <section class="ingredients-section">
+            <div class="container ingredients-content">
+                <img src="images/bottle.webp" alt="Eine Hand, die eine Flasche Glucavit hält, mit detaillierter Ansicht der Kapseln." class="ingredients-image" width="600" height="600" loading="lazy">
+                <div class="ingredients-text">
+                    <h2>Die Glucavit Inhaltsstoffe: Was steckt in jeder Kapsel?</h2>
+                    <p>Die Wirksamkeit von Glucavit liegt in seiner sorgfältig ausgewählten Zusammensetzung. Erfahren Sie mehr über die Hauptkomponenten dieses Nahrungsergänzungsmittels.</p>
+                    <div class="accordion">
+                        <div class="accordion-item"><button class="accordion-header"><h3>Natürliche Inhaltsstoffe für sichere, nachhaltige Ergebnisse</h3><span class="accordion-icon">+</span></button><div class="accordion-body"><p>Glucavit nutzt die Kraft der Natur mit Inhaltsstoffen wie Apfelessig und Vitamin B12, die sorgfältig ausgewählt wurden, um Ihren Stoffwechsel zu unterstützen.</p></div></div>
+                        <div class="accordion-item"><button class="accordion-header"><h3>Berberin für ausgeglichenen Blutzucker</h3><span class="accordion-icon">+</span></button><div class="accordion-body"><p>Berberin ist ein kraftvolles Pflanzenalkaloid, das nachweislich die Insulinsensitivität und den Glukosestoffwechsel unterstützt, was für eine ausgewogene Diät wichtig ist.</p></div></div>
+                    </div>
+                    <a href="ingredients.html" class="secondary-link">Erfahren Sie mehr über die Inhaltsstoffe</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Customer Reviews Section -->
+        <section class="reviews-section">
+            <div class="container">
+                <h2>Echte Glucavit Bewertungen von unseren Kunden</h2>
+                <p>Sehen Sie, was Benutzer über ihre Erfahrungen mit den Glucavit Abnehmkapseln sagen. Diese Bewertungen spiegeln echte Ergebnisse wider.</p>
+                <div class="reviews-grid stylish-reviews">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="images/rev1.jpg" alt="Profilbild von Sabine K." class="reviewer-image">
+                            <div class="reviewer-info">
+                                <span class="reviewer-name">Sabine K.</span>
+                                <span class="reviewer-location">
+                                    <svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 3" width="20"><path d="M0 0h5v3H0z"/><path fill="#D00" d="M0 1h5v2H0z"/><path fill="#FFCE00" d="M0 2h5v1H0z"/></svg>
+                                    Berlin
+                                </span>
+                            </div>
+                            <div class="star-rating">★★★★★</div>
+                        </div>
+                        <p class="review-text">"Glucavit war die beste Entscheidung des Jahres - ich habe endlich meine Gewichtsverlustziele erreicht."</p>
+                        <div class="verified-badge">✓ Verifizierter Kauf</div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="images/rev2.jpg" alt="Profilbild von Lena J." class="reviewer-image">
+                            <div class="reviewer-info">
+                                <span class="reviewer-name">Lena J.</span>
+                                <span class="reviewer-location">
+                                    <svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 3" width="20"><path d="M0 0h5v3H0z"/><path fill="#D00" d="M0 1h5v2H0z"/><path fill="#FFCE00" d="M0 2h5v1H0z"/></svg>
+                                    München
+                                </span>
+                            </div>
+                            <div class="star-rating">★★★★★</div>
+                        </div>
+                        <p class="review-text">"Ich fühle mich so viel energiegeladener und habe in nur einem Monat 5kg abgenommen. Sehr zu empfehlen!"</p>
+                        <div class="verified-badge">✓ Verifizierter Kauf</div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="images/rev3.jpg" alt="Profilbild von Anja K." class="reviewer-image">
+                            <div class="reviewer-info">
+                                <span class="reviewer-name">Anja K.</span>
+                                <span class="reviewer-location">
+                                    <svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 3" width="20"><path d="M0 0h5v3H0z"/><path fill="#D00" d="M0 1h5v2H0z"/><path fill="#FFCE00" d="M0 2h5v1H0z"/></svg>
+                                    Hamburg
+                                </span>
+                            </div>
+                            <div class="star-rating">★★★★★</div>
+                        </div>
+                        <p class="review-text">"Die Kapseln sind leicht einzunehmen und haben meinen Heißhunger auf Süßes wirklich reduziert. Ein tolles Produkt."</p>
+                        <div class="verified-badge">✓ Verifizierter Kauf</div>
+                    </div>
+                </div>
+                <a href="reviews.html" class="cta-button" style="margin-top: 2.5rem; font-size: 0.9rem; min-height: 50px; padding: 0.8rem 1.5rem;">Lesen Sie weitere Bewertungen</a>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Häufig gestellte Fragen zu Glucavit</h2>
+                <div class="accordion">
+                    <div class="accordion-item"><button class="accordion-header"><h3>Wie lange dauert es, bis Ergebnisse sichtbar sind?</h3><span class="accordion-icon">+</span></button><div class="accordion-body"><p>Individuelle Erfahrungen können variieren. Viele Anwender berichten von mehr Energie nach wenigen Tagen, während der Gewichtsverlust bei konsequenter Einnahme der Glucavit Tabletten und einem gesunden Lebensstil nach einigen Wochen sichtbar wird.</p></div></div>
+                    <div class="accordion-item"><button class="accordion-header"><h3>Ist Glucavit ein Betrug?</h3><span class="accordion-icon">+</span></button><div class="accordion-body"><p>Nein, Glucavit ist kein Betrug. Es ist ein legitimes Nahrungsergänzungsmittel, das mit bekannten, natürlichen Inhaltsstoffen formuliert ist. Wie unsere positiven Glucavit Bewertungen zeigen, haben viele Kunden ihre Ziele erreicht. Ergebnisse können jedoch variieren.</p></div></div>
+                    <div class="accordion-item"><button class="accordion-header"><h3>Kann ich Glucavit mit anderen Medikamenten einnehmen?</h3><span class="accordion-icon">+</span></button><div class="accordion-body"><p>Wenn Sie Medikamente einnehmen, konsultieren Sie bitte Ihren Arzt, bevor Sie mit der Einnahme von Glucavit oder anderen Diätpillen beginnen.</p></div></div>
+                </div>
+                <a href="#" class="cta-button affiliate-link">Jetzt Glucavit sicher bestellen</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-top">
+                <a href="index.html"><img src="images/white-logo.png" alt="Glucavit Firmenlogo in weiß" class="logo" width="120" height="44"></a>
+                <nav class="footer-nav">
+                    <a href="ingredients.html">Zutaten</a>
+                    <a href="terms.html">Nutzungsbedingungen</a>
+                    <a href="privacy.html">Datenschutzrichtlinie</a>
+                    <a href="contact.html">Kontakt</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <div class="legal-text">
+                    <p class="affiliate-disclosure"><strong>Offenlegung als Affiliate:</strong> Diese Website enthält Affiliate-Links. Das bedeutet, dass wir eine Provision erhalten können, wenn Sie über unsere Links einen Kauf tätigen, ohne dass Ihnen dadurch zusätzliche Kosten entstehen.</p>
+                    <p class="copyright">&copy; 2025 Glucavit. Alle Rechte vorbehalten. <br>*Dieses Produkt wird nicht für Personen unter 18 Jahren empfohlen. Konsultieren Sie Ihren Arzt, bevor Sie dieses Produkt einnehmen. Die auf dieser Website gemachten Angaben wurden nicht von der Food and Drug Administration bewertet. Dieses Produkt ist nicht dazu bestimmt, Krankheiten zu diagnostizieren, zu behandeln, zu heilen oder zu verhindern.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
